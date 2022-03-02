@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dojonary</title>
+    <link rel="stylesheet" href="Dojonary.css">
+</head>
+<body>
+    <div class="wrapper align-center justify-center justify-between">
+        <div class="nav align-center justify-between d-flex background-gray">
+            <h1>
+                Dojonary
+            </h1>
+            <input type="text" class="search border" placeholder="Search">
+            <button class="login blue-btn" onclick="login()" id="change">Login</button>
+        </div>
+        <div class="main d-flex justify-center">
+            <div class="col-2">
+                <div class="card border d-flex align-center padding">
+                    <div class="card-body padding align-center">
+                        <ul>
+                            <li><h2>ninja</h2></li>
+                            <li><h3><em>noun</em></h3></li>
+                            <li>Plural: <em>ninjas</em></li>
+                        </ul>
+                        <button class="likes yellow-btn" onclick="like()">13 likes</button>
+                    </div>
+                    <p>A practitioner skilled in the <a href="">Japanese</a>
+                    art of <a href="">ninjutsu</a></p>
+                </div>
+                <div class="card border d-flex align-center justify-around justify-between padding">
+                    <div class="card-body">
+                        <ul>
+                            <li><h2>ninja</h2></li>
+                            <li><h3><em>noun</em></h3></li>
+                            <li>Plural: <em>ninjas</em></li>
+                        </ul>
+                        <button onclick="like()" class="likes yellow-btn">37 likes</button>
+                    </div>
+                    <p>A <a href="">programmer</a> who breaks down problems
+                    with <a href="">zen</a>-like focus</p>
+                </div>
+            </div>
+            <div class="col-1 border align-center">
+                <p>Dojonary is defined by <strong>YOU</strong></p>
+                <button onclick="def()" class="def green-btn" id="grn">Add Definition</button>
+            </div>
+        </div>
+    </div>
+    <script src="dojonary.js"></script>
+</body>
+</html>
